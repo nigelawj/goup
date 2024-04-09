@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cake Glace Homepage</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Marketing bar (sit on top) -->
+        <div class="w3-bar w3-text-white custom-bar">
+            <div class="w3-bar-item">
+                Complimentary cheese tart with minimum spending for Passion Card
+                Members!
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="column-left">
+                <div class="search-icon">
+                    <i class="glyphicon glyphicon-search"></i>
+                </div>
+            </div>
+            <div class="column-center">
+                <div class="logo">
+                    <img src="images/glace-logo.png" alt="Glace Logo" />
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="icons">
+                    <i class="glyphicon glyphicon-heart"></i>
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                    <i class="glyphicon glyphicon-user"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Menu -->
+        <div class="w3-bar w3-white centered-nav">
+            <a href="#" class="w3-bar-item w3-button"></a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">About Us</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"
+                        >Japan Disaster Relief</a
+                    >
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Shop</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Whole Cakes</a>
+                    <a href="#" class="w3-bar-item w3-button">Sliced Cakes</a>
+                    <a href="#" class="w3-bar-item w3-button">Animal Cakes</a>
+                    <a href="#" class="w3-bar-item w3-button">Cupcakes</a>
+                    <a href="#" class="w3-bar-item w3-button">Other Products</a>
+                </div>
+            </div>
+            <!-- Other menu items without dropdown -->
+            <a href="#" class="w3-bar-item w3-button">Promotions</a>
+            <a href="#" class="w3-bar-item w3-button">Baking Class</a>
+            <a href="#" class="w3-bar-item w3-button">Contact Us</a>
+        </div>
+
+        <!-- Page Content Start -->
+        <!-- Hero Banner -->
+        <div class="w3-display-container full-width-hero">
+            <!-- Slide 1 -->
+            <div class="mySlides">
+                <img src="images/big-strawberry-cake.jpg" style="width: 100%" />
+                <div class="overlay-text">
+                    <h2>Explore Our Whole Cakes</h2>
+                    <button>SHOP ALL</button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="mySlides">
+                <img
+                    src="images/thai-milktea-cakeslice.jpg"
+                    style="width: 100%"
+                />
+                <div class="overlay-text">
+                    <h2>Explore Our Tea Cakes</h2>
+                    <button>SHOP ALL</button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="mySlides">
+                <img src="images/customise-cake.jpg" style="width: 100%" />
+                <div class="overlay-text">
+                    <h2>Customize Your Dream Cake</h2>
+                    <button>SHOP ALL</button>
+                </div>
+            </div>
+            <!-- Navigation buttons and dots -->
+            <div
+                class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width: 100%"
+            >
+                <span
+                    class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                    onclick="currentDiv(1)"
+                ></span>
+                <span
+                    class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                    onclick="currentDiv(2)"
+                ></span>
+                <span
+                    class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                    onclick="currentDiv(3)"
+                ></span>
+            </div>
+            <button
+                class="w3-button w3-display-left w3-transparent w3-text-white w3-hover-text-brown slideshow-button"
+                onclick="plusDivs(-1)"
+            >
+                &#10094;
+            </button>
+            <button
+                class="w3-button w3-display-right w3-transparent w3-text-white w3-hover-text-brown slideshow-button"
+                onclick="plusDivs(1)"
+            >
+                &#10095;
+            </button>
+        </div>
+
+        <!-- USP Container -->
+        <div class="usp-container">
+            <div class="usp-column">
+                <img src="images/store-icon.png" alt="Freshly Made Icon" />
+                <h2>FRESHLY MADE</h2>
+            </div>
+            <div class="usp-column">
+                <img
+                    src="images/shipping-icon.png"
+                    alt="Same Day Delivery Icon"
+                />
+                <h2>SAME DAY DELIVERY</h2>
+            </div>
+            <div class="usp-column">
+                <img
+                    src="images/globe-icon.png"
+                    alt="Cake Inspired by Japan Icon"
+                />
+                <h2>CAKE INSPIRED BY JAPAN</h2>
+            </div>
+        </div>
+
+        <!-- Cakes Of The Month -->
+        <div id="cakesofthemonth">
+            <h1>Cakes Of The Month</h1>
+        </div>
+        <div class="cakes-of-the-month-container">
+            <div class="cake-column">
+                <div class="cake-image">
+                    <img
+                        src="images/strawberry-shortcake.jpg"
+                        alt="Strawberry Shortcake"
+                    />
+                    <div class="overlay">
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <h2>Hokkaido Strawberry Shortcake</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div class="cake-column">
+                <div class="cake-image">
+                    <img
+                        src="images/red-velvet-cupcake.jpg"
+                        alt="Red Velvet Cupcake"
+                    />
+                    <div class="overlay">
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <h2>Red Velvet Cupcake</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div class="cake-column">
+                <div class="cake-image">
+                    <img
+                        src="images/pandan-cake.jpg"
+                        alt="Pandan Biscoff Cake"
+                    />
+                    <div class="overlay">
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <h2>Pandan Biscoff Cake</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+        </div>
+
+        <!-- Collections -->
+        <div class="collections">
+            <div class="collections-column">
+                <div class="collections-image">
+                    <img
+                        src="images/mixed-fruits-deluxe-cake.jpg"
+                        alt="Mixed Fruits Deluxe Cake"
+                    />
+                </div>
+            </div>
+            <div class="collections-column">
+                <div class="collections-image">
+                    <img src="images/big-mango-cake.jpg" alt="Mango Cake" />
+                </div>
+                <div class="collections-row">
+                    <div class="collections-image">
+                        <img src="images/animal-cake.jpg" alt="Animal Cake" />
+                    </div>
+                    <div class="collections-image">
+                        <img src="images/cupcake.jpg" alt="Cupcake" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Top Picks -->
+        <section class="top-picks">
+            <h1>Our Top Picks</h1>
+            <!-- <button class="scroll-btn left" onclick="scrollCarousel('left')">
+                &#10094;
+            </button>
+            <div class="top-picks-container" id="topPicksContainer">
+                <div class="top-pick-item">
+                    <img src="images/cupcake3.jpg" alt="Top Pick 1" />
+                    <h3>Top Pick 1</h3>
+                    <p>Description of Top Pick 1</p>
+                </div>
+                <div class="top-pick-item">
+                    <img src="images/mango-shortcake.jpg" alt="Top Pick 2" />
+                    <h3>Top Pick 2</h3>
+                    <p>Description of Top Pick 2</p>
+                </div>
+                <div class="top-pick-item">
+                    <img src="images/tiramisu-cake.jpg" alt="Top Pick 3" />
+                    <h3>Top Pick 3</h3>
+                    <p>Description of Top Pick 3</p>
+                </div>
+                <div class="top-pick-item">
+                    <img src="images/small-cake.jpg" alt="Top Pick 4" />
+                    <h3>Top Pick 4</h3>
+                    <p>Description of Top Pick 4</p>
+                </div>
+                <div class="top-pick-item">
+                    <img src="images/cupcake2.jpg" alt="Top Pick 5" />
+                    <h3>Top Pick 5</h3>
+                    <p>Description of Top Pick 5</p>
+                </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollCarousel('right')">
+                &#10095;
+            </button> -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+1" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+2" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
+
+        <!-- Word On The Street -->
+        <section class="word-on-the-street">
+            <div id="word-on-the-street-header">
+                <h1>Word on the Street</h1>
+            </div>
+            <div class="word-on-the-street-content">
+                <!-- Column for the image -->
+                <div class="word-on-the-street-image-column">
+                    <img
+                        src="images/small-strawberry-cake.jpg"
+                        alt="Word on the street image"
+                        id="wordOnTheStreetImage"
+                    />
+                </div>
+                <!-- Column for the text -->
+                <div class="word-on-the-street-column">
+                    <h3 id="wordOnTheStreetSubHeader">
+                        Word on the street item 1
+                    </h3>
+                    <p id="wordOnTheStreetText">Description of the item 1</p>
+                </div>
+            </div>
+        </section>
+        <!-- Page Content End -->
+
+        <!-- Footer -->
+        <footer class="footer-grid">
+            <!-- Column 1-4: Join The Community -->
+            <div class="footer-section community">
+                <h4>Join The Community</h4>
+                <p>
+                    Subscribe for exclusive offers, original stories, events and
+                    more.
+                </p>
+                <form>
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        aria-label="Email address"
+                    />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Column 6-8: About Us -->
+            <div class="footer-section about">
+                <h4>About Us</h4>
+                <a href="#">FAQ</a>
+                <a href="#">Careers</a>
+            </div>
+
+            <!-- Column 8-10: Information -->
+            <div class="footer-section information">
+                <h4>Information</h4>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Orders & Payments</a>
+            </div>
+
+            <!-- Column 11-13: Connect With Us -->
+            <div class="footer-section connect">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"
+                        ><img src="images/fb-logo.png" alt="Instagram"
+                    /></a>
+                    <a href="#" aria-label="Facebook"
+                        ><img src="images/ig-logo.png" alt="Facebook"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer - Bottom Bar -->
+        <footer class="bottom-bar">
+            <div class="column-left">© 2024 Pâtisserie Glacé Pte. Ltd.</div>
+            <div class="column-center">Great Cakes Make Great Memories</div>
+            <div class="column-right">
+                <a href="#" aria-label="paynow"
+                    ><img src="images/paynow-logo.png" alt="paynow"
+                /></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
