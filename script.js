@@ -36,22 +36,20 @@ setInterval(autoChangeSlides, 10000);
 
 function scrollCarousel(direction) {
     const container = document.getElementById("topPicksContainer");
+    const firstContainer = document.getElementById("topPicksFirst");
+    const secondContainer = document.getElementById("topPicksSecond");
+    // const widthOfFirstContainer = parseFloat(window.getComputedStyle(firstContainer).getPropertyValue('width'));
+    // const widthOfSecondContainer = parseFloat(window.getComputedStyle(secondContainer).getPropertyValue('width'));
+    const leftOfFirstContainer = parseFloat(window.getComputedStyle(firstContainer).getPropertyValue('left'));
+    const leftOfSecondContainer = parseFloat(window.getComputedStyle(secondContainer).getPropertyValue('left'));
     const scrollAmount = container.offsetWidth * 0.2; // 20% of container width
 
     if (direction === "left") {
-        container.scrollLeft -= scrollAmount;
-        if (container.scrollLeft <= 0) {
-            container.scrollLeft =
-                container.scrollWidth - container.offsetWidth;
-        }
+        firstContainer.style.left = `${scrollAmount + leftOfFirstContainer}px`
+        secondContainer.style.left = `${leftOfSecondContainer + scrollAmount}px`
     } else if (direction === "right") {
-        container.scrollLeft += scrollAmount;
-        if (
-            container.scrollLeft >=
-            container.scrollWidth - container.offsetWidth
-        ) {
-            container.scrollLeft = 0;
-        }
+        firstContainer.style.left = `-${scrollAmount - leftOfFirstContainer}px`
+        secondContainer.style.left = `${leftOfSecondContainer - scrollAmount}px`
     }
 }
 
