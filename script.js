@@ -34,26 +34,21 @@ function autoChangeSlides() {
 }
 setInterval(autoChangeSlides, 10000);
 
-function scrollCarousel(direction) {
-    const container = document.getElementById("topPicksContainer");
-    const scrollAmount = container.offsetWidth * 0.2; // 20% of container width
-
-    if (direction === "left") {
-        container.scrollLeft -= scrollAmount;
-        if (container.scrollLeft <= 0) {
-            container.scrollLeft =
-                container.scrollWidth - container.offsetWidth;
-        }
-    } else if (direction === "right") {
-        container.scrollLeft += scrollAmount;
-        if (
-            container.scrollLeft >=
-            container.scrollWidth - container.offsetWidth
-        ) {
-            container.scrollLeft = 0;
-        }
-    }
-}
+// Initialise SlickJS Carousels
+$(document).ready(function () {
+    $(".top-picks-container").slick({
+        infinite: true, // infinite scrolling
+        rows: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1, // scroll amount
+        autoplay: false, // disable auto scrolling
+        adaptiveHeight: true,
+        centerMode: true,
+        focusOnSelect: true,
+        prevArrow: $(".scroll-btn.left"),
+        nextArrow: $(".scroll-btn.right"),
+    });
+});
 
 var wordOnTheStreetIndex = 1;
 

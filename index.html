@@ -5,24 +5,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
             href="https://www.w3schools.com/w3css/4/w3.css"
         />
         <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
             href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- bootstrap stylesheet -->
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet"
+        />
+
+        <!-- slick stylesheet -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
     </head>
     <body>
@@ -251,10 +263,8 @@
 
         <!-- Our Top Picks -->
         <section class="top-picks">
-            <h1>Our Top Picks</h1>
-            <button class="scroll-btn left" onclick="scrollCarousel('left')">
-                &#10094;
-            </button>
+            <h1 class="top-picks-text">Our Top Picks</h1>
+            <button class="scroll-btn left slick-arrow">&#10094;</button>
             <div class="top-picks-container" id="topPicksContainer">
                 <div class="top-pick-item">
                     <img src="images/cupcake3.jpg" alt="Top Pick 1" />
@@ -282,9 +292,7 @@
                     <p>Description of Top Pick 5</p>
                 </div>
             </div>
-            <button class="scroll-btn right" onclick="scrollCarousel('right')">
-                &#10095;
-            </button>
+            <button class="scroll-btn right">&#10095;</button>
         </section>
 
         <!-- Word On The Street -->
@@ -369,9 +377,19 @@
                 /></a>
             </div>
         </footer>
-        <script type="text/javascript" src="script.js"></script>
+
+        <!-- scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- SlickJS -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <!-- custom scripts -->
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
