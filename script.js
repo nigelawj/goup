@@ -88,3 +88,6 @@ function scrollWordOnTheStreet(direction) {
     subHeader.innerText = subHeaders[wordOnTheStreetIndex];
     text.innerText = texts[wordOnTheStreetIndex];
 }
+
+// Get the current year for the copyright
+$("#year").text(new Date().getFullYear());
