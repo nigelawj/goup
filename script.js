@@ -47,6 +47,7 @@ $(document).ready(function () {
         focusOnSelect: true,
         prevArrow: $(".scroll-btn.left"),
         nextArrow: $(".scroll-btn.right"),
+        draggable: false,
     });
 });
 
